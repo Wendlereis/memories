@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:b="http://bootsfaces.net/ui"
+     xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>#{msgs.inserirUsuario}</title>
+	</h:head>
+	<h:body>
+		<ui:composition template="index.xhtml">
+ 			<ui:define name="content">
+		    <b:container>
+			<b:row>
+				<b:column>
+					<h1>#{msgs.inserirUsuario}</h1>
+				</b:column>
+			</b:row>
+		</b:container>
+		<b:container>
+			<b:row>
+				<b:column col-md="10" offset="1">
+					<b:messages/>
+					<b:form>
+						<b:row>
+							<b:column col-md="6">
+								<p>#{msgs.nome}</p>
+                        		<b:inputText value="#{userManagedBean.user.name}" 
+                        			required="true" requiredMessage="#{msgs.nome_usuario_erro}"/>
+							</b:column>
+							<b:column col-md="6">
+								<p>#{msgs.sobrenome}</p>
+                        		<b:inputText value="#{userManagedBean.user.lastname}" 
+                        			required="true" requiredMessage="#{msgs.sobrenome_usuario_erro}"/>
+							</b:column>
+						</b:row>
+					
+						<b:row>
+							<b:column col-md="2">
+								 <p>CPF</p>
+                        		 <b:inputText value="#{userManagedBean.user.cpf}" 
+                        			required="true" requiredMessage="#{msgs.cpf_usuario_erro}"/>
+							</b:column>
+							<b:column col-md="4">
+								<p>Email</p>
+                        		<b:inputText value="#{userManagedBean.user.email}" 
+                        			required="true" requiredMessage="#{msgs.email_usuario_erro}"/>
+							</b:column>
+							<b:column col-md="3">
+								<p>#{msgs.genero}</p>
+		                        <b:selectOneMenu required="true" requiredMessage="#{msgs.genero_usuario_erro}" value="#{userManagedBean.user.gender}" 
+		                        					converter="omnifaces.SelectItemsConverter">
+									<f:selectItem noSelectionOption="true" itemLabel="#{msgs.selecione}"></f:selectItem>
+									<f:selectItem noSelectionOption="true" itemLabel="#{msgs.masculino}"></f:selectItem>
+									<f:selectItem noSelectionOption="true" itemLabel="#{msgs.feminino}"></f:selectItem>
+									<f:selectItem noSelectionOption="true" itemLabel="#{msgs.indefinido}"></f:selectItem>							
+								</b:selectOneMenu>
+							</b:column>
+							<b:column col-md="3">
+								<p>#{msgs.dataNascimento}</p>
+		                        <b:datepicker required="true" requiredMessage="#{msgs.dataNascimento_usuario_erro}" value="#{userManagedBean.user.birthdate}" >
+		                          <f:convertDateTime Timelocale="pt_BR" timeZone="America/Sao_Paulo"   pattern="dd/MM/yyyy" />
+		                          <f:convertDateTime Timelocale="en_US" timeZone="America/Sao_Paulo"   pattern="MM/dd/yyyy" /> 
+		                        </b:datepicker>
+							</b:column>
+						</b:row> 
+						<b:row>
+							<b:column col-md="3">
+								<p>#{msgs.telefone}</p>
+                        		<b:inputText value="#{userManagedBean.user.phonenumber}"
+                        			required="true" requiredMessage="#{msgs.telefone_usuario_erro}"/>
+							</b:column>							
+						</b:row>
+                        
+                        <b:row>
+							<b:column col-md="6">
+								 <p>#{msgs.estado}</p>
+								   <b:selectOneMenu required="true" requiredMessage="#{msgs.estado_usuario_erro}" value="#{userManagedBean.user.state}" 
+		                        					converter="omnifaces.SelectItemsConverter">
+									<f:selectItem noSelectionOption="true" itemLabel="#{msgs.selecione}"></f:selectItem>
+									<f:selectItem noSelectionOption="true" itemLabel="AC"></f:selectItem>
+									<f:selectItem noSelectionOption="true" itemLabel="AL"></f:selectItem>
+									<f:selectItem noSelectionOption="true" itemLabel="AP"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="AM"></f:selectItem>		
+									<f:selectItem noSelectionOption="true" itemLabel="BA"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="CE"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="DF"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="ES"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="GO"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="MA"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="MT"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="MS"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="MG"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="PA"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="PB"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="PR"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="PE"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="PI"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="RJ"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="RN"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="RS"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="RO"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="RR"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="SC"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="SP"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="SE"></f:selectItem>	
+									<f:selectItem noSelectionOption="true" itemLabel="TO"></f:selectItem>						
+								</b:selectOneMenu>
+                   
+							</b:column>	
+							<b:column col-md="6">
+								<p>#{msgs.cidade}</p>
+                        		<b:inputText value="#{userManagedBean.user.city}"
+                        			required="true" requiredMessage="#{msgs.cidade_usuario_erro}"/>
+							</b:column>												
+						</b:row>
+						
+						<b:row>
+							<b:column col-md="6">
+								<p>#{msgs.rua}</p>
+                        		<b:inputText value="#{userManagedBean.user.street}" 
+                        			required="true" requiredMessage="#{msgs.rua_usuario_erro}"/>
+							</b:column>
+							<b:column col-md="3">
+								<p>#{msgs.numeroCasa}</p>
+                        		<b:inputText value="#{userManagedBean.user.housenumber}"
+                        			required="true" requiredMessage="#{msgs.numeroCasa_usuario_erro}"/>
+							</b:column>	
+							<b:column col-md="3">
+								<p>#{msgs.cep}</p>
+                        		<b:inputText value="#{userManagedBean.user.zipcode}" 
+                        			required="true" requiredMessage="#{msgs.cep_usuario_erro}"/>
+							</b:column>							
+						</b:row>
+						
+						<b:row>
+							<b:column col-md="3">
+								<p>#{msgs.nomeUsuario}</p>
+								<b:inputText value="#{userManagedBean.user.login.user}" 
+                        			validator="#{userManagedBean.validateExistentUser}">
+                        			<f:facet name="prepend">
+							            <b:icon name="user" />
+							        </f:facet>
+                        		</b:inputText>
+							</b:column>
+							<b:column col-md="3">
+								<p>#{msgs.senha}</p>
+								<b:inputText value="#{userManagedBean.user.login.password}" 
+                        			required="true" requiredMessage="#{msgs.senha_usuario_erro}">
+                        			<f:facet name="prepend">
+							            <b:iconAwesome name="key" />
+							        </f:facet>
+                        		</b:inputText>
+							</b:column>							
+						</b:row>
+						
+						<b:commandButton look="success" value="#{msgs.inserir}" action="#{userManagedBean.insertUserController}"></b:commandButton>
+					</b:form>
+				</b:column>
+			</b:row>
+		</b:container>
+		    
+		    </ui:define>
+		</ui:composition>
+		
+	</h:body>
+</html>

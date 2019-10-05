@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='ISO-8859-1' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:b="http://bootsfaces.net/ui"
+     xmlns:h="http://java.sun.com/jsf/html"
+     xmlns:f="http://java.sun.com/jsf/core"
+     xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>#{msgs.editar_livro}</title>
+		<style>
+			form {
+				margin-top: 30px;
+			}
+			
+			.btn {
+				width: 25%;
+				margin-top: 15px;
+				float: right;
+			}
+		</style>
+	</h:head>
+	<h:body>
+		<ui:composition template="index.xhtml">
++			<ui:define name="content">
+				<b:container>
+					<b:row>
+						<b:column>
+							<h1>#{msgs.editar_livro}</h1>
+						</b:column>
+					</b:row>
+				</b:container>
+				<b:container>
+					<b:row>
+						<b:column col-md="8" offset="2">
+							<b:messages/>
+							<b:form>
+								<b:row>
+									<b:column col-md="8">
+										<p>#{msgs.nome}:</p>
+										<b:inputText required="true" requiredMessage="#{msgs.nome_book_erro}" value="#{bookManagedBean.book.name}" />
+									</b:column>
+									<b:column col-sm="4">
+										<p>#{msgs.isbn}</p>
+										<b:inputText required="true" requiredMessage="#{msgs.isbn_book_erro}" value="#{bookManagedBean.book.ISBN}" />
+									</b:column>
+								</b:row>					 	
+									
+								<b:row>
+									<b:column col-md="4">
+										<p>#{msgs.autor}</p>						
+										<b:selectOneMenu required="true" requiredMessage="#{msgs.autor_book_erro}" value="#{bookManagedBean.book.author}" converter="omnifaces.SelectItemsConverter">
+											<f:selectItem noSelectionOption="true" itemLabel="Select..."></f:selectItem>
+											<f:selectItems value="#{bookManagedBean.listAuthor}" var="author" itemLabel="#{author.name}" itemValue="#{author}"></f:selectItems>
+										</b:selectOneMenu>
+									</b:column>
+									
+									<b:column col-md="4">
+										<p>#{msgs.genero}</p>						
+										<b:selectOneMenu required="true" requiredMessage="#{msgs.genero_book_erro}" value="#{bookManagedBean.book.genre}" converter="omnifaces.SelectItemsConverter">
+											<f:selectItem noSelectionOption="true" itemLabel="Select..."></f:selectItem>
+											<f:selectItems value="#{bookManagedBean.listGenre}" var="genre" itemLabel="#{genre.genre}" itemValue="#{genre}"></f:selectItems>
+										</b:selectOneMenu>
+									</b:column>
+									
+									<b:column col-md="4">
+										<p>#{msgs.editora}</p>	
+										<b:selectOneMenu required="true" requiredMessage="#{msgs.editora_book_erro}" value="#{bookManagedBean.book.publisher}" converter="omnifaces.SelectItemsConverter">
+											<f:selectItem noSelectionOption="true" itemLabel="Select..."></f:selectItem>
+											<f:selectItems value="#{bookManagedBean.listPublisher}" var="publisher" itemLabel="#{publisher.publisher}" itemValue="#{publisher}"></f:selectItems>
+										</b:selectOneMenu>
+									</b:column>						
+								</b:row>
+								<b:row>
+								      <b:column col-md="6">
+								        <p>#{msgs.imagem}:</p>
+								          <b:inputText required="true"  value="#{bookManagedBean.book.bookImage}" >
+								          <f:validateLength minimum="1" maximum="4000"/>
+								          </b:inputText>
+								      </b:column> 
+								       <b:column col-md="3">
+								        <p>#{msgs.quantidade}</p>
+								          <b:inputText required="true"  value="#{bookManagedBean.book.quantity}" />
+								      </b:column> 
+								       <b:column col-md="3">
+								        <p>#{msgs.desconto}</p>
+								          <b:inputText required="true"  value="#{bookManagedBean.book.discount}" />
+								      </b:column> 
+								     </b:row>	
+											
+								<p>#{msgs.preco}</p>
+								<b:inputText required="true" requiredMessage="#{msgs.preco_book_erro}" value="#{bookManagedBean.book.price}" />					
+								
+								<p>#{msgs.sinopse}</p>
+								<b:inputTextarea value="#{bookManagedBean.book.synopsis}" />
+																													
+								<b:commandButton look="primary" value="#{msgs.salvar}" action="#{bookManagedBean.editBookController}"></b:commandButton>
+							</b:form>
+						</b:column>
+					</b:row>
+				</b:container>	
+			</ui:define>
+		</ui:composition>
+			
+	</h:body>
+</html>
