@@ -6,6 +6,7 @@ This is my personal story as a developer, here you'll find my very first project
 - [Android](#Android)
 - [Css](#CSS)
 - [Java](#Java)
+- [Xamarin](#Xamarin)
 
 ### Android
 
@@ -17,8 +18,12 @@ This is my personal story as a developer, here you'll find my very first project
 
 ### Java
 
-**ecommerce:** A bookstore ecommerce using JSF 
+**ecommerce:** A bookstore ecommerce using JSF
 
 **servlet-crud:** A web application using JSP Servlet
 
 **moosegroup-spacecup:** An academic project for FIAP SpaceCup to create a rocket championship manager
+
+### Xamarin
+
+**fiap-invest:** A cross-platform app with xamarin to manage investments
