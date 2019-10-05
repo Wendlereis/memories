@@ -7,4 +7,4 @@ This is my personal story as a developer, here you'll find my very first project
 
 ### Java
 
-**simple-servlet-crud:** A web application using JSP Servlet
+**servlet-crud:** A web application using JSP Servlet
