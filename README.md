@@ -24,6 +24,8 @@ This is my personal story as a developer, here you'll find my very first project
 
 **servlet-crud:** A web application using JSP Servlet
 
+**verity-group-training:** Intertnship process to ingress Verity company, here you'll find very basic java projects since console util web applications using JSP Servlet
+
 **moosegroup-spacecup:** An academic project for FIAP SpaceCup to create a rocket championship manager
 
 ### Xamarin
