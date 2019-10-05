@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="296.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.moosegroup.controllers.FormExcluirLancamentoController">
+   <children>
+      <Pane layoutY="86.0" prefHeight="344.0" prefWidth="440.0" style="-fx-background-color: #E6E6E6;">
+         <children>
+            <Label layoutX="56.0" layoutY="14.0" text="Deseja realmente excluir este lançamento?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnExcluir" buttonType="RAISED" layoutX="56.0" layoutY="284.0" onAction="#btnExcluirAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Excluir" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancelar" buttonType="RAISED" layoutX="243.0" layoutY="284.0" onAction="#btnCancelarAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="35.0" layoutY="58.0" prefHeight="207.0" prefWidth="371.0" style="-fx-border-color: #E91C5D; -fx-border-radius: 25px; -fx-background-color: #d9d9d9; -fx-background-radius: 25PX;">
+               <children>
+                  <Label layoutX="27.0" layoutY="146.0" text="Data">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="102.0" text="Foguete">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="59.0" text="Grupo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGrupo" layoutX="187.0" layoutY="59.0" text="Moose Group">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblFoguete" layoutX="187.0" layoutY="103.0" text="Alce Voador">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblData" layoutX="187.0" layoutY="146.0" text="10/10/2016">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblnumeroLancamento" layoutX="190.0" layoutY="22.0" text="5126">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="22.0" text="N° Lançamento">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane prefHeight="86.0" prefWidth="440.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="136.0" layoutY="14.0" text="Atenção" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

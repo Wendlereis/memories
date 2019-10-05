@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="703.0" prefWidth="1017.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.moosegroup.controllers.FormPesquisarGrupoController">
+   <children>
+      <Pane prefHeight="107.0" prefWidth="1017.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="270.0" layoutY="17.0" text="Consultar Grupos" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="64.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCancelar" layoutX="14.0" layoutY="10.0" onAction="#btnCancelarAction" prefHeight="88.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-color: #e91c5d; -fx-background-radius: 100%;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_arrow_left1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutY="107.0" prefHeight="568.0" prefWidth="1017.0" style="-fx-background-color: #E6E6E6;">
+         <children>
+            <JFXTextField fx:id="txtPesquisar" focusColor="#e91c5d" labelFloat="true" layoutX="153.0" layoutY="60.0" maxWidth="499.0" minWidth="458.0" prefHeight="31.0" prefWidth="499.0" promptText="Pesquisar">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnConsultar" buttonType="RAISED" layoutX="725.0" layoutY="63.0" onAction="#btnConsultarAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Consultar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnAlterar" buttonType="RAISED" layoutX="222.0" layoutY="501.0" onAction="#btnAlterarAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Alterar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnExcluir" buttonType="RAISED" layoutX="631.0" layoutY="501.0" onAction="#btnExcluirAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Excluir" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="tblGrupos" layoutX="23.0" layoutY="126.0" prefHeight="343.0" prefWidth="979.0">
+              <columns>
+                <TableColumn fx:id="colCodigo" prefWidth="138.0" text="Código" />
+                <TableColumn fx:id="colNomeGrupo" minWidth="0.0" prefWidth="138.0" text="Nome" />
+                  <TableColumn fx:id="colCodTurma" prefWidth="75.0" text="Código Turma" />
+                  <TableColumn fx:id="colTurma" prefWidth="138.0" text="Turma" />
+                  <TableColumn fx:id="colCodFoguete" prefWidth="75.0" text="Código Foguete" />
+                  <TableColumn fx:id="colFoguete" prefWidth="138.0" text="Foguete" />
+                  <TableColumn fx:id="colPesoFoguete" prefWidth="138.0" text="Peso Foguete" />
+                  <TableColumn fx:id="colCodLogin" prefWidth="75.0" text="Código Login" />
+                  <TableColumn fx:id="colLogin" prefWidth="138.0" text="Login" />
+                  <TableColumn fx:id="colSenha" prefWidth="138.0" text="Senha" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane layoutY="667.0" prefHeight="36.0" prefWidth="1017.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="881.0" layoutY="10.0" text="MooseGroup - 2016" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

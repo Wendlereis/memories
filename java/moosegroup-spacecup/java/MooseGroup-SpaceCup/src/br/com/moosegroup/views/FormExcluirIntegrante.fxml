@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="378.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.moosegroup.controllers.FormExcluirIntegranteController">
+   <children>
+      <Pane prefHeight="86.0" prefWidth="440.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="136.0" layoutY="14.0" text="Atenção" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="86.0" prefHeight="298.0" prefWidth="440.0" style="-fx-background-color: #E6E6E6;">
+         <children>
+            <Label layoutX="56.0" layoutY="14.0" text="Deseja realmente excluir este Integrante?">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnExcluir" buttonType="RAISED" layoutX="56.0" layoutY="236.0" onAction="#btnExcluirAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Excluir" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnCancelar" buttonType="RAISED" layoutX="242.0" layoutY="236.0" onAction="#btnCancelarAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutX="35.0" layoutY="58.0" prefHeight="148.0" prefWidth="371.0" style="-fx-border-color: #E91C5D; -fx-border-radius: 25px; -fx-background-color: #d9d9d9; -fx-background-radius: 25PX;">
+               <children>
+                  <Label layoutX="26.0" layoutY="105.0" text="Grupo">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="61.0" text="RM">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="27.0" layoutY="18.0" text="Nome">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNome" layoutX="104.0" layoutY="18.0" text="João Victor Ferreira Lima">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblRm" layoutX="104.0" layoutY="62.0" text="73656">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblGrupo" layoutX="104.0" layoutY="105.0" text="Moose Group">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

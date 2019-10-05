@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="403.0" prefWidth="485.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.moosegroup.controllers.FormAlterarGrupoController">
+   <children>
+      <Pane prefHeight="107.0" prefWidth="485.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="124.0" layoutY="25.0" text="Alterar Grupos" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCancelar" layoutX="14.0" layoutY="10.0" onAction="#btnCancelarAction" prefHeight="60.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-radius: 100%; -fx-background-color: e91c5d;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_arrow_left1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <JFXTabPane centerShape="false" layoutY="107.0" prefHeight="260.0" prefWidth="485.0" rotateGraphic="true" side="LEFT" style="-fx-background-color: e6e6e6;" styleClass=".tab-header-background" stylesheets="@../css/FormCadastroGrupo.css">
+         <tabs>
+            <Tab style="-fx-padding: 0 4px; -fx-background-color: ef5d8b; -fx-focus-color: green;" text="Dados do Grupo">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="txtNomeGrupo" focusColor="#e91c5d" layoutX="102.0" layoutY="54.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="30.0" layoutY="56.0" text="Nome">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="124.0" text="Turma">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXComboBox fx:id="cbbTurma" layoutX="109.0" layoutY="122.0" prefHeight="31.0" prefWidth="341.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: ef5d8b; -fx-padding: 0 4px; -fx-faint-focus-color: green;" text="Dados do Foguete">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="31.0" layoutY="56.0" text="Nome">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtNomeFoguete" focusColor="#e91c5d" layoutX="98.0" layoutY="54.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <JFXTextField fx:id="txtPesoFoguete" focusColor="#e91c5d" layoutX="100.0" layoutY="124.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="33.0" layoutY="126.0" text="Peso">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab closable="false" style="-fx-padding: 0 4px; -fx-background-color: ef5d8b;" text="Dados de Acesso">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="txtLogin" focusColor="#e91c5d" layoutX="99.0" layoutY="33.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="34.0" layoutY="35.0" text="Login">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="34.0" layoutY="106.0" text="Senha">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXPasswordField fx:id="txtSenha" focusColor="#e91c5d" layoutX="99.0" layoutY="104.0" maxWidth="354.0" minWidth="354.0" prefHeight="31.0" prefWidth="354.0" />
+                        <JFXButton fx:id="btnAlterar" buttonType="RAISED" layoutX="317.0" layoutY="163.0" onAction="#btnAlterarAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Alterar" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Pane layoutY="367.0" prefHeight="36.0" prefWidth="485.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="349.0" layoutY="10.0" text="MooseGroup - 2016" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

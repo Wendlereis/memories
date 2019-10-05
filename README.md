@@ -13,3 +13,5 @@ This is my personal story as a developer, here you'll find my very first project
 ### Java
 
 **servlet-crud:** A web application using JSP Servlet
+
+**moosegroup-spacecup:** An academic project for FIAP SpaceCup to create a rocket championship manager

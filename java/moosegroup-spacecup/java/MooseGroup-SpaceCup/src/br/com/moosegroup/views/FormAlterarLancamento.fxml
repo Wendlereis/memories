@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.moosegroup.controllers.FormAlterarLancamentoController">
+   <children>
+      <JFXTabPane centerShape="false" layoutY="88.0" prefHeight="439.0" prefWidth="960.0" rotateGraphic="true" side="LEFT" style="-fx-background-color: e6e6e6;" styleClass=".tab-header-background" stylesheets="@../css/FormCadastroGrupo.css">
+         <tabs>
+            <Tab style="-fx-padding: 0 140px; -fx-background-color: ef5d8b; -fx-focus-color: green;" text="Pré-Lançamento">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="txtNumeroLancamento" editable="false" focusColor="#e91c5d" layoutX="401.0" layoutY="20.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="213.0" layoutY="22.0" text="Nº do Lançamento">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="227.0" layoutY="74.0" text="Nome do Grupo">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtNomeGrupo" editable="false" focusColor="#e91c5d" layoutX="399.0" layoutY="72.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="193.0" layoutY="234.0" text="Data do Lançamento">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtNomeFoguete" editable="false" focusColor="#e91c5d" layoutX="401.0" layoutY="125.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="213.0" layoutY="127.0" text="Nome do Foguete">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtPesoFoguete" editable="false" focusColor="#e91c5d" layoutX="401.0" layoutY="176.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="205.0" layoutY="180.0" text="Peso do Foguete(g)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtAnguloLancamento" focusColor="#e91c5d" layoutX="401.0" layoutY="287.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <Label layoutX="156.0" layoutY="289.0" text="Ângulo do Lançamento(º)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="155.0" layoutY="348.0" text="Velocidade do Vento(m/s)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtVelocidadeVento" focusColor="#e91c5d" layoutX="401.0" layoutY="343.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" />
+                        <DatePicker fx:id="dtpDataLancamento" layoutX="403.0" layoutY="235.0" prefHeight="25.0" prefWidth="351.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: ef5d8b; -fx-padding: 0 140px; -fx-faint-focus-color: green;" text="Pós-Lançamento">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTextField fx:id="txtAltitudeMaxima" focusColor="#e91c5d" layoutX="292.0" layoutY="37.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <Label layoutX="117.0" layoutY="35.0" text="Altitude Máxima(m)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="516.0" layoutY="49.0" text="Velocidade Maxima(m/s)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="89.0" layoutY="88.0" text="Tempo de Propulsão(s)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="141.0" text="Pico de Aceleração(m/s²)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="524.0" layoutY="102.0" text="Aceleração Média(m/s²)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="302.0" text="Tempo de Apogeu e Descida(s)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="118.0" layoutY="191.0" text="Tempo de Ejeção(s)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="543.0" layoutY="155.0" text="Altitude de Ejeção(m)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="101.0" layoutY="246.0" text="Taxa de Descida(m/s)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="565.0" layoutY="205.0" text="Duração do Voo(s)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="550.0" layoutY="259.0" text="Distãncia do Alvo(m)">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXTextField fx:id="txtVelocidadeMaxima" focusColor="#e91c5d" layoutX="727.0" layoutY="46.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtTempoPropulsao" focusColor="#e91c5d" layoutX="292.0" layoutY="90.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtPicoAceleracao" focusColor="#e91c5d" layoutX="292.0" layoutY="143.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtTempEjecao" focusColor="#e91c5d" layoutX="292.0" layoutY="193.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtTaxaDescida" focusColor="#e91c5d" layoutX="292.0" layoutY="248.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtTempoApogeuDescida" focusColor="#e91c5d" layoutX="292.0" layoutY="306.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtAceleracaoMedia" focusColor="#e91c5d" layoutX="727.0" layoutY="99.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtAltitudeEjecao" focusColor="#e91c5d" layoutX="727.0" layoutY="152.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtDuracaoVoo" focusColor="#e91c5d" layoutX="727.0" layoutY="204.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXTextField fx:id="txtDistanciaAlvo" focusColor="#e91c5d" layoutX="727.0" layoutY="257.0" maxWidth="354.0" minWidth="110.0" prefHeight="31.0" prefWidth="200.0" />
+                        <JFXButton fx:id="btnAlterar" buttonType="RAISED" layoutX="731.0" layoutY="323.0" onAction="#btnAlterarAction" prefHeight="45.0" prefWidth="196.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Alterar" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </JFXTabPane>
+      <Pane layoutY="527.0" prefHeight="38.0" prefWidth="960.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="824.0" layoutY="11.0" text="MooseGroup - 2016" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="88.0" prefWidth="960.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="278.0" layoutY="15.0" text="Alterar Lançamento" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCancelar" layoutX="25.0" layoutY="5.0" onAction="#btnCancelarAction" prefHeight="38.0" prefWidth="67.0" ripplerFill="WHITE" style="-fx-background-radius: 100%; -fx-background-color: e91c5d;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="70.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_arrow_left1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

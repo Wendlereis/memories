@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="456.0" prefWidth="576.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.moosegroup.controllers.FormRegistrarIntegranteController">
+   <children>
+      <Pane layoutY="418.0" prefHeight="38.0" prefWidth="579.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="433.0" layoutY="10.0" text="MooseGroup - 2016" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="107.0" prefHeight="311.0" prefWidth="579.0" style="-fx-background-color: #E6E6E6;">
+         <children>
+            <JFXTextField fx:id="txtNome" focusColor="#e91c5d" layoutX="161.0" layoutY="66.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0">
+                <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtRm" focusColor="#e91c5d" layoutX="161.0" layoutY="132.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0">
+                <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="70.0" layoutY="66.0" text="Nome">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="134.0" text="RM">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnRegistrar" buttonType="RAISED" layoutX="363.0" layoutY="243.0" onAction="#btnRegistrarAction" prefHeight="30.0" prefWidth="142.0" ripplerFill="WHITE" style="-fx-background-radius: 25px; -fx-background-color: e91c5d;" text="Cadastrar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+<!--            <Label layoutX="70.0" layoutY="194.0" text="Grupo">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="cbbGrupo" layoutX="161.0" layoutY="192.0" maxWidth="354.0" minWidth="293.0" prefHeight="31.0" prefWidth="354.0" style="-fx-border-color: #F0F0F0;" />-->
+         </children>
+      </Pane>
+      <Pane prefHeight="107.0" prefWidth="579.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="129.0" layoutY="25.0" text="Cadastrar Integrante" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="48.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnCancelar" layoutX="14.0" layoutY="10.0" onAction="#btnCancelarAction" prefHeight="60.0" prefWidth="60.0" ripplerFill="WHITE" style="-fx-background-radius: 100%; -fx-background-color: e91c5d;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="80.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_arrow_left1.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

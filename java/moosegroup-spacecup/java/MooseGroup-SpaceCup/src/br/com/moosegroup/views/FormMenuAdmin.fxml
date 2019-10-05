@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="616.0" prefWidth="979.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.moosegroup.controllers.FormMenuAdminController">
+   <children>
+      <Pane prefHeight="107.0" prefWidth="979.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="35.0" layoutY="16.0" text="Menu Administrador" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="64.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="107.0" onMouseClicked="#pnMiddlePaneOnMouseClicked" prefHeight="473.0" prefWidth="979.0" style="-fx-background-color: #E6E6E6;">
+         <children>
+            <JFXButton fx:id="btnGrupos" layoutX="138.0" layoutY="104.0" onAction="#btnGruposAction" prefHeight="115.0" prefWidth="121.0" ripplerFill="#e91c5d" style="-fx-border-radius: 30px;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="107.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="761.0" layoutY="221.0" text="Lançamentos">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnLancamentos" layoutX="747.0" layoutY="103.0" onAction="#btnLancamentosAction" prefHeight="115.0" prefWidth="121.0" ripplerFill="#e91c5d" style="-fx-border-radius: 30px;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="107.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/rocket_launch.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="324.0" layoutY="23.0" text="Bem Vindo, Administrador">
+               <font>
+                  <Font name="Yu Gothic Light" size="36.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnRegistrarGrupos" layoutX="62.0" layoutY="262.0" onAction="#btnRegistrarGruposAction" prefHeight="54.0" prefWidth="77.0" ripplerFill="#e91c5d" style="-fx-border-radius: 500px;" text=" " visible="false">
+               <graphic>
+                  <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="lblRegistrarGrupos" layoutX="61.0" layoutY="375.0" text="Registrar Grupos" visible="false">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="175.0" layoutY="222.0" text="Grupos">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnConsultarGrupos" layoutX="237.0" layoutY="262.0" onAction="#btnConsultarGruposAction" prefHeight="51.0" prefWidth="67.0" ripplerFill="#e91c5d" style="-fx-border-radius: 30px;" text=" " visible="false">
+               <graphic>
+                  <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="lblConsultarGrupos" layoutX="236.0" layoutY="375.0" text="Consultar Grupos" visible="false">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblListarLancamentos" layoutX="745.0" layoutY="371.0" text="Listar Lançamentos" visible="false">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnListarLancamentos" layoutX="753.0" layoutY="258.0" onAction="#btnListarLancamentosAction" prefHeight="51.0" prefWidth="67.0" ripplerFill="#e91c5d" style="-fx-border-radius: 30px;" text=" " visible="false">
+               <graphic>
+                  <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="481.0" layoutY="221.0" text="Integrantes">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnIntegrantes" layoutX="460.0" layoutY="103.0" onAction="#btnIntegrantesAction" prefHeight="115.0" prefWidth="121.0" ripplerFill="#e91c5d" style="-fx-border-radius: 30px;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="107.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_user.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="lblConsultarIntegrantes" layoutX="450.0" layoutY="371.0" text="Consultar Integrantes" visible="false">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnConsultarIntegrantes" layoutX="466.0" layoutY="258.0" onAction="#btnConsultarIntegrantesAction" prefHeight="51.0" prefWidth="67.0" ripplerFill="#e91c5d" style="-fx-border-radius: 30px;" text=" " visible="false">
+               <graphic>
+                  <ImageView fitHeight="95.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_search.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSair" layoutX="904.0" layoutY="400.0" onAction="#btnSairAction" prefHeight="43.0" prefWidth="39.0" ripplerFill="#e91c5d" style="-fx-border-radius: 30px;" text=" ">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/_close.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutY="580.0" prefHeight="36.0" prefWidth="979.0" style="-fx-background-color: #E91C5D;">
+         <children>
+            <Label layoutX="825.0" layoutY="10.0" text="MooseGroup - 2016" textFill="WHITE">
+               <font>
+                  <Font name="Yu Gothic Light" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
