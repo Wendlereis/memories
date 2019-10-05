@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LOGIN</string>
+    <string name="lblEmail">EMAIL</string>
+    <string name="lblPassword">PASSWORD</string>
+    <string name="lblEnter">ENTER</string>
+    <string name="lblLoginVerification">Login Verification</string>
+    <string name="lblWarning">Warning</string>
+    <string name="lblFailedLogin">Invalid Login</string>
+    <string name="lblValidLogin">Valid Login</string>
+</resources>
