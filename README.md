@@ -16,6 +16,8 @@ This is my personal story as a developer, here you'll find my very first project
 
 **bootstrap-4-template:** Landing page using bootstrap 4 and the new styles using flexbox
 
+**omega-robocup:** Landing page for FIAP RoboCup to show robot build process and features
+
 ### Java
 
 **ecommerce:** A bookstore ecommerce using JSF

@@ -1,0 +1,296 @@
+body 
+{   
+   margin: 0;
+   padding: 0;
+   font-family: tahoma;
+   height: 125em;
+   background-color: #FFF;
+}
+
+#cabecalho
+{	
+	height: 12.5%;
+}
+
+#robo1
+{
+	background-image: url("../imagens/Logo.jpg");
+	width: 400px;
+	height: 89px;
+}
+
+#centralizarlogo
+{
+	position:relative;
+	margin-left:34%;
+	margin-right:34%;
+	top:50px;
+}
+
+hr
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	clear: both;
+}
+
+#rcimg
+{
+	width: 230px;
+	height: 198px;
+	background-image: url("../imagens/RoboCupImg.png");
+	float: left;
+	margin-top: 6.25em;
+	margin-left: 3.125em;
+}
+
+#rctxt1
+{
+	width: 33%;	
+	margin-left: 1.875em;
+	float: left;
+	height:78.3%;
+}
+
+#rctxt2
+{
+	width: 33%;	
+	float: left;
+	margin-left: 1.875em;
+	margin-bottom: 1.875em;
+	height:70%;
+}
+
+#robocup
+{
+  width:100%;
+  height:25.5%;  
+}
+
+#centralizar
+{
+	width:80%;
+	height:100%;
+	margin: 0 auto;
+}
+
+#centralizarsobre
+{
+	width:80%;
+	height:100%;
+	margin: 0 auto;
+}
+
+#titleTexts
+{
+	font-family: "century gothic", "sans-serif";
+	font-size: 1.875em;
+	margin-left: 1.875em;
+	padding-top: 1.875em;
+}
+
+#titleTextsII
+{
+	font-family: "century gothic", "sans-serif";
+	font-size: 1.875em;
+	padding-top: 3.75em;
+}
+
+#texts
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", "sans-serif";
+	font-weight: lighter;
+	font-size: 0.875em;
+}
+
+#canvasjogo
+{
+	margin:0 100px;
+}
+
+canvas
+{   
+	margin: 15px auto;
+	border: 0.0625em solid black;
+	width: 800px;
+	height: 480px;
+}
+
+#center
+{
+	margin: 0 auto;
+	width: 62.5em;
+}
+
+#centerGame
+{    
+	width:80%;
+	height:100%;
+	margin: 0 auto;	
+}
+
+#omega01
+{
+	background-image: url("../imagens/omega1.png");
+	width: 18.75em;
+	height: 17.125em;
+}
+
+#omega02
+{
+	background-image: url("../imagens/omega2.png");
+	background-repeat: no-repeat;
+	width: 18.75em;
+	height: 21.1875em;
+	float: left;
+	margin-top: 1.875em;
+	margin-left: 1.875em;
+}
+
+#menu 
+{	
+	width: 100%;
+	height: 3.125em;
+	background-color: #000;
+	margin-bottom: 0.625em;
+	padding-left: 10%;
+}
+
+#menu ul
+{
+	width: 60em;
+	margin: 0 auto;
+	list-style: none;
+}
+
+#menu ul li 
+{
+	float: left;
+}
+
+#menu ul li a 
+{
+	padding: 0.9375em 1.875em;
+	line-height: 3.125em;
+	border-left: 0.0625em solid #fff;
+	border-right: 0.0625em solid #000;
+	text-decoration: none;
+	color: #fff;
+}
+
+#menu ul li:first-child a 
+{
+	border-left: 0;
+}
+
+#menu ul li:last-child a 
+{
+	border-right: 0;
+}
+
+#menu ul li a:hover 
+{
+	background-color: #EE3A8C ;
+}
+
+.menu-fixo  
+{
+    position:fixed !important;
+    top: 0;
+    z-index: 99;
+}
+
+#rodape
+{
+	clear:both;
+	width:100%;
+	height:9%;
+	background-color:#000;
+}
+
+#controdape
+{
+	width: 50%;
+	height:85%;
+	float:left;
+}
+
+#controdape2
+{
+	width:50%;
+	height:85%;
+	float:right;
+}
+
+.textorodape
+{
+	text-align:center;
+	color:white;
+	font-size:0.9375em
+}
+
+#integ1
+{
+	width:11.75em;
+	height:17.625em;
+	float:left;
+}
+
+#integ2
+{
+	width:11.75em;
+	height:17.625em;
+	float:left;
+}
+
+#integ3
+{
+	width:11.75em;
+	height:17.625em;
+	float:left;
+}
+
+#integ4
+{
+	width:11.75em;
+	height:17.625em;
+	float:left;
+}
+
+#integ5
+{
+	width:13.75em;
+	height:17.625em;
+	float:left;
+}
+.rmint
+{
+	text-align:center;
+
+}
+#copyright
+{
+	clear:both;
+}
+
+#menucel
+{
+	display:none;
+}
+
+.format
+{
+	font-family: "century gothic", "sans-serif";
+	margin-left: 1.875em;
+}
+
+#textojogo
+{
+	display:none;
+}
+
+#canvasjogo2
+{
+	display:none;
+}
